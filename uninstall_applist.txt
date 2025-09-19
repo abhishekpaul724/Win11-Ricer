@@ -12,3 +12,14 @@ Microsoft.WindowsMaps*
 Microsoft.WindowsFeedbackHub*
 Microsoft.ScreenSketch*
 Microsoft.MicrosoftSolitaireCollection*
+Microsoft.ZuneMusic*
+Microsoft.ZuneVideo*
+Microsoft.XboxGameOverlay*
+Microsoft.Edge.GameAssist*
+Microsoft.Xbox.TCUI*
+Microsoft.XboxSpeechToTextOverlay*
+Microsoft.XboxIdentityProvider*
+Microsoft.XboxGamingOverlay*
+Microsoft.GamingApp*
+microsoft.windowscommunicationsapps*
+Microsoft.YourPhone*

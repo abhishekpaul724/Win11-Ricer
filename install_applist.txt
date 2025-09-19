@@ -1,3 +1,5 @@
 DuongDieuPhap.ImageGlass
 CharlesMilette.TranslucentTB
 Greenshot.Greenshot
+VideoLAN.VLC
+yt-dlp.yt-dlp
