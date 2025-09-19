@@ -3,3 +3,11 @@ Microsoft.Todos*
 Microsoft.Copilot*
 Microsoft.Windows.Photos*
 Microsoft.BingWeather*
+Microsoft.BingNews*
+Microsoft.People*
+MicrosoftCorporationII.MicrosoftFamily*
+MSTeams*
+Microsoft.BingSearch*
+Microsoft.WindowsMaps*
+Microsoft.WindowsFeedbackHub*
+Microsoft.ScreenSketch*
