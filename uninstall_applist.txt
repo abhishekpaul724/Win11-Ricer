@@ -11,3 +11,4 @@ Microsoft.BingSearch*
 Microsoft.WindowsMaps*
 Microsoft.WindowsFeedbackHub*
 Microsoft.ScreenSketch*
+Microsoft.MicrosoftSolitaireCollection*
