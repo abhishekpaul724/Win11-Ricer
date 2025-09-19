@@ -23,3 +23,4 @@ Microsoft.XboxGamingOverlay*
 Microsoft.GamingApp*
 microsoft.windowscommunicationsapps*
 Microsoft.YourPhone*
+Microsoft.GamingServices*
