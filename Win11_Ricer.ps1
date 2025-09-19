@@ -1,3 +1,4 @@
+#Uninstall Bloated Apps
 function Uninstall-App{
     $applist=Get-Content -Path "./uninstall_applist.txt"
     foreach($app in $applist){
@@ -11,6 +12,7 @@ function Uninstall-App{
     }
     Read-Host -Prompt "Apps Deleted Press Enter for Proceeding: "
 }
+#Install Ricing and Other Apps
 function Install-App{
     $applist= Get-Content -Path "./install_applist.txt"
     foreach($app in $applist){
@@ -24,6 +26,7 @@ function Install-App{
     }
     Read-Host -Prompt "Apps Installed Press Enter for Proceeding"
 }
+#Install Infosec Suite Apps
 function Install-Infosec-Suite-App{
     $applist= Get-Content -Path "./infosec_suite.txt"
     foreach($app in $applist){
@@ -51,7 +54,7 @@ while($true){
         "1" { Uninstall-App }
         "2" { Install-App }
         "3" { Install-Infosec-Suite-App }
-        "0" { exit }  # exits the while loop
+        "0" { exit }
         default { Write-Warning "Invalid choice. Please try again." }
     }
 }
