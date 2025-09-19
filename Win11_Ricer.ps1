@@ -1,4 +1,3 @@
-Get-AppxPackage -Name Microsoft.OutlookForWindows* | Remove-AppxPackage
 function Uninstall-App{
     $applist=Get-Content -Path "./uninstall_applist.txt"
     foreach($app in $applist){
