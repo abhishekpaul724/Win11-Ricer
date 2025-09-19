@@ -23,7 +23,7 @@ function Install-App{
             Write-Warning "Failed to Install App: $($_.Exception.Message)"
         }
     }
-    Read-Host -Prompt "Apps Installed Press Enter for Proceeding: "
+    Read-Host -Prompt "Apps Installed Press Enter for Proceeding"
 }
 function Install-Infosec-Suite-App{
     $applist= Get-Content -Path "./infosec_suite.txt"
@@ -36,8 +36,23 @@ function Install-Infosec-Suite-App{
             Write-Warning "Failed to Install App: $($_.Exception.Message)"
         }
     }
-    Read-Host -Prompt "Apps Installed Press Enter for Proceeding: "
+    Read-Host -Prompt "Apps Installed Press Enter for Proceeding"
 }
-Uninstall-App
-Install-App
-Install-Infosec-Suite-App
+while($true){
+    # Menu
+    clear
+    Write-Host "`nChoose an option:"
+    Write-Host "1. Uninstall Apps"
+    Write-Host "2. Install Standard Apps"
+    Write-Host "3. Install Infosec Suite"
+    Write-Host "0. Exit"
+
+    $choice = Read-Host -Prompt "Enter your choice (0/1/2/3)"
+    switch ($choice) {
+        "1" { Uninstall-App }
+        "2" { Install-App }
+        "3" { Install-Infosec-Suite-App }
+        "0" { exit }  # exits the while loop
+        default { Write-Warning "Invalid choice. Please try again." }
+    }
+}
