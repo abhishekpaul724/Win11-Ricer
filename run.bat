@@ -1,0 +1,1 @@
+powershell.exe -ExecutionPolicy Bypass -file "Win11_ricer.ps1"

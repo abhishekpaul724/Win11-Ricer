@@ -1,0 +1,4 @@
+Microsoft.OutlookForWindows*
+Microsoft.Todos*
+Microsoft.Copilot*
+Microsoft.Windows.Photos*
