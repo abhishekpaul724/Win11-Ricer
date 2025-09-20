@@ -4,3 +4,4 @@ Greenshot.Greenshot
 VideoLAN.VLC
 yt-dlp.yt-dlp
 mpv.net
+SumatraPDF.SumatraPDF
