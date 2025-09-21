@@ -5,3 +5,4 @@ VideoLAN.VLC
 yt-dlp.yt-dlp
 mpv.net
 SumatraPDF.SumatraPDF
+KDE.KDEConnect
