@@ -5,3 +5,4 @@ VideoLAN.VLC
 mpv.net
 SumatraPDF.SumatraPDF
 KDE.KDEConnect
+qBittorrent.qBittorrent
