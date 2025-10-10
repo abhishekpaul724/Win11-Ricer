@@ -6,3 +6,5 @@ mpv.net
 SumatraPDF.SumatraPDF
 KDE.KDEConnect
 qBittorrent.qBittorrent
+TheDocumentFoundation.LibreOffice
+Mozilla.Firefox
