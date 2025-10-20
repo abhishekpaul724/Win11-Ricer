@@ -24,3 +24,9 @@ Microsoft.GamingApp*
 microsoft.windowscommunicationsapps*
 Microsoft.YourPhone*
 Microsoft.GamingServices*
+Microsoft.WindowsSoundRecorder*
+Microsoft.PowerAutomateDesktop*
+Microsoft.MicrosoftOfficeHub*
+Microsoft.WindowsAlarms*
+Microsoft.Windows.DevHome*
+MicrosoftWindows.CrossDevice*
