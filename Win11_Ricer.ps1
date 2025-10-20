@@ -1,34 +1,11 @@
 #Apply Registry Edits
 function Registry-Edit {
-    $reg_edits=Get-Content -Path "./registry_edits.json" | ConvertFrom-Json
-    foreach ($change in $reg_edits){
-        # Ensure the registry key exists
-        if (-not (Test-Path $change.Path)) {
-            New-Item -Path $change.Path -Force | Out-Null
-        }
-        else{
-            Write-Output "$($change.Path) already exists."
-        }
-        # Try to get the current value
-        try {
-            $currentValue = (Get-ItemProperty -Path $change.Path -Name $change.Name -ErrorAction Stop).$($change.Name)
-        } catch {
-            $currentValue = $null
-        }
-        # Set the value if it doesn't exist
-        $valueToSet = if ($change.Type -eq "DWORD") { [int]$change.Value } else { $change.Value }
-        if ($currentValue -ne $valueToSet) {
-            New-ItemProperty -Path $change.Path -Name $change.Name -Value $valueToSet -PropertyType $change.Type -Force | Out-Null
-            Write-Output "Set '$($change.Name)' to $($valueToSet) in $($change.Path)"
-        } else {
-            Write-Output "'$($change.Name)' already set to $($valueToSet) - no changes made."
-        }
-    }
+    reg import "$PSScriptRoot\registry_edits.reg"
     Read-Host -Prompt "Registry Edits Completed Press Enter for Proceeding"
 }
 #Uninstall Bloated Apps
 function Uninstall-App{
-    $applist=Get-Content -Path "./uninstall_applist.txt"
+    $applist=Get-Content -Path "$PSScriptRoot/uninstall_applist.txt"
     foreach($app in $applist){
         try{
             Get-AppxPackage -Name $app | Remove-AppxPackage
@@ -42,7 +19,7 @@ function Uninstall-App{
 }
 #Install Ricing and Other Apps
 function Install-App{
-    $applist= Get-Content -Path "./install_applist.txt"
+    $applist= Get-Content -Path "$PSScriptRoot/install_applist.txt"
     foreach($app in $applist){
         try{
             winget install --id $app -e --accept-package-agreements --accept-source-agreements
@@ -56,7 +33,7 @@ function Install-App{
 }
 #Install Infosec Suite Apps
 function Install-Infosec-Suite-App{
-    $applist= Get-Content -Path "./infosec_suite.txt"
+    $applist= Get-Content -Path "$PSScriptRoot/infosec_suite.txt"
     foreach($app in $applist){
         try{
             winget install --id $app -e --accept-package-agreements --accept-source-agreements
@@ -67,6 +44,11 @@ function Install-Infosec-Suite-App{
         }
     }
     Read-Host -Prompt "Apps Installed Press Enter for Proceeding"
+}
+if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(
+    [Security.Principal.WindowsBuiltInRole] "Administrator")) {
+    Start-Process powershell "-ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs
+    exit
 }
 while($true){
     # Menu
