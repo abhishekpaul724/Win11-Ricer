@@ -12,4 +12,6 @@ Neovim.Neovim
 RedHat.Podman
 KeePassXCTeam.KeePassXC
 Syncthing.Syncthing
+Google.PlatformTools
+7zip.7zip 
 TheDocumentFoundation.LibreOffice
