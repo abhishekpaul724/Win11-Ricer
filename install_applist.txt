@@ -6,8 +6,9 @@ mpv.net
 SumatraPDF.SumatraPDF
 KDE.KDEConnect
 qBittorrent.qBittorrent
-TheDocumentFoundation.LibreOffice
 Mozilla.Firefox
 BtbN.FFmpeg.GPL.8.0
 Neovim.Neovim
 RedHat.Podman
+KeePassXCTeam.KeePassXC
+TheDocumentFoundation.LibreOffice
