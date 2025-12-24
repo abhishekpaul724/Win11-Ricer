@@ -16,3 +16,4 @@ Google.PlatformTools
 7zip.7zip 
 TheDocumentFoundation.LibreOffice
 LGUG2Z.komorebi
+LGUG2Z.whkd
