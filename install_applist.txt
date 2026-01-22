@@ -17,3 +17,5 @@ Google.PlatformTools
 TheDocumentFoundation.LibreOffice
 LGUG2Z.komorebi
 LGUG2Z.whkd
+ZAP.ZAP
+Alacritty.Alacritty
