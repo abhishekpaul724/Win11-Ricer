@@ -1,0 +1,5 @@
+pip install basedpyright
+https://github.com/kristoff-it/superhtml
+npm install -g @olrtg/emmet-language-server
+npm install -g svelte-language-server
+npm i -g vscode-langservers-extracted

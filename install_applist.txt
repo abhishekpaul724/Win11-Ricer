@@ -19,3 +19,6 @@ LGUG2Z.komorebi
 LGUG2Z.whkd
 ZAP.ZAP
 Alacritty.Alacritty
+DevToys-app.DevToys
+AmN.yasb
+VSCodium.VSCodium
